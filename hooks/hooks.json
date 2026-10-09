@@ -1,0 +1,8 @@
+{
+  "description": "flagcheck: verify long flags against the binary's --help",
+  "hooks": {
+    "PreToolUse": [
+      {"matcher": "Bash", "hooks": [{"type": "command", "command": "python3", "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/hook.py"], "timeout": 15}]}
+    ]
+  }
+}
